@@ -1,12 +1,3 @@
-// 1. Install dependencies DONE
-// 2. Import dependencies DONE
-// 3. Setup webcam and canvas DONE
-// 4. Define references to those DONE
-// 5. Load posenet DONE
-// 6. Detect function DONE
-// 7. Drawing utilities from tensorflow DONE
-// 8. Draw functions DONE
-
 import React, { useRef } from "react";
 import "./App.css";
 import * as tf from "@tensorflow/tfjs";
@@ -47,7 +38,7 @@ function App() {
 
       // Make Detections
       const pose = await net.estimateSinglePose(video);
-      console.log(pose);
+      // console.log(pose);
 
       drawCanvas(pose, video, videoWidth, videoHeight, canvasRef);
     }
